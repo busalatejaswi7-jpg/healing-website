@@ -27,7 +27,7 @@ const Home = () => {
             <p className="text-[#D4AF37] tracking-[0.24em] mb-3 uppercase text-sm md:text-base">
             Ascend with Clarity
           </p>
-            <h1 className="text-5xl md:text-6xl font-light mb-5 leading-[1.12] text-[#F8F2E6] [text-shadow:0_2px_8px_rgba(18,9,30,0.28),0_6px_18px_rgba(18,9,30,0.18)]">
+            <h1 className="text-5xl md:text-6xl font-light mb-5 leading-[1.12] text-[#FFF8EE] opacity-100 [text-shadow:0_1px_4px_rgba(18,9,30,0.28)]">
             Find Purpose, Peace,
             <br />
             and Personal Growth.
