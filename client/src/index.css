@@ -1,3 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --gold: #d4af37;
+  --deep-plum: #4a2c5d;
+  --text-soft: rgba(255, 255, 255, 0.86);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  background: var(--deep-plum);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.02em;
+}
+
+button,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+@layer components {
+  .premium-panel {
+    @apply border border-white/20 bg-white/10 backdrop-blur-md shadow-[0_18px_45px_rgba(0,0,0,0.25)];
+  }
+
+  .premium-button {
+    @apply rounded-md px-6 py-3 font-semibold tracking-[0.09em] uppercase transition-all duration-300 ease-out;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -4,94 +4,38 @@ import { FaInstagram, FaYoutube, FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#4A2C5D] py-12 text-white border-t border-[#D4AF37]/30">
+    <footer className="border-t border-[#D4AF37]/30 bg-gradient-to-b from-[#4A2C5D] to-[#2E173C] py-14 text-white">
       <div className="container mx-auto px-6 text-center">
-        {/* Brand + Tagline */}
         <div className="mb-8">
-          <h2 className="text-white text-2xl md:text-3xl font-bold mb-4 tracking-tight">
+          <h2 className="mb-4 text-2xl font-semibold tracking-[0.05em] text-white md:text-3xl">
             S Healing Center • Spiritual Awakening
           </h2>
-          <p className="max-w-md mx-auto text-sm md:text-base italic text-white/70">
+          <p className="mx-auto max-w-lg text-sm italic leading-relaxed text-white/75 md:text-base">
             Guiding you through the stars and ancient symbols to find your true
             purpose.
           </p>
         </div>
 
-        {/* Social Links */}
-        <div className="flex justify-center gap-10 mb-8">
-          {/* Instagram */}
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            className="flex flex-col items-center group" rel="noreferrer"
-          >
-            <div className="w-14 h-14 flex items-center justify-center rounded-full border border-[#D4AF37] text-white group-hover:bg-[#D4AF37] group-hover:text-black transition">
-              <FaInstagram size={22} />
-            </div>
-            <span className="mt-2 text-xs uppercase tracking-widest group-hover:text-[#D4AF37]">
-              Instagram
-            </span>
-          </a>
-
-          {/* YouTube Channel 1 */}
-          <a
-            href="https://youtu.be/jHUOzixQ8Wg"
-            target="_blank"
-            className="flex flex-col items-center group" rel="noreferrer"
-          >
-            <div className="w-14 h-14 flex items-center justify-center rounded-full border border-[#D4AF37] text-white group-hover:bg-[#D4AF37] group-hover:text-black transition">
-              <FaYoutube size={22} />
-            </div>
-            <span className="mt-2 text-xs uppercase tracking-widest group-hover:text-[#D4AF37]">
-              YouTube Main
-            </span>
-          </a>
-
-          {/* YouTube Channel 2 */}
-          <a
-            href="https://youtu.be/YOUR_SECOND_CHANNEL_LINK"
-            target="_blank"
-            className="flex flex-col items-center group" rel="noreferrer"
-          >
-            <div className="w-14 h-14 flex items-center justify-center rounded-full border border-[#D4AF37] text-white group-hover:bg-[#D4AF37] group-hover:text-black transition">
-              <FaYoutube size={22} />
-            </div>
-            <span className="mt-2 text-xs uppercase tracking-widest group-hover:text-[#D4AF37]">
-              YouTube Clips
-            </span>
-          </a>
-
-          {/* Telegram Free */}
-          <a
-            href="https://t.me/+tkCnkzT96kxmMzQ1"
-            target="_blank"
-            className="flex flex-col items-center group" rel="noreferrer"
-          >
-            <div className="w-14 h-14 flex items-center justify-center rounded-full border border-[#D4AF37] text-white group-hover:bg-[#D4AF37] group-hover:text-black transition">
-              <FaTelegramPlane size={22} />
-            </div>
-            <span className="mt-2 text-xs uppercase tracking-widest group-hover:text-[#D4AF37]">
-              Telegram Free 🎁
-            </span>
-          </a>
-
-          {/* Telegram Paid */}
-          <a
-            href="https://t.me/+tkCnkzT96kxmMzQ1"
-            target="_blank"
-            className="flex flex-col items-center group" rel="noreferrer"
-          >
-            <div className="w-14 h-14 flex items-center justify-center rounded-full border border-[#D4AF37] text-white group-hover:bg-[#D4AF37] group-hover:text-black transition">
-              <FaTelegramPlane size={22} />
-            </div>
-            <span className="mt-2 text-xs uppercase tracking-widest group-hover:text-[#D4AF37]">
-              Telegram Paid 🔒
-            </span>
-          </a>
+        <div className="mb-10 flex flex-wrap justify-center gap-7 md:gap-10">
+          {[
+            ["https://www.instagram.com", <FaInstagram size={22} />, "Instagram"],
+            ["https://youtu.be/jHUOzixQ8Wg", <FaYoutube size={22} />, "YouTube Main"],
+            ["https://youtu.be/YOUR_SECOND_CHANNEL_LINK", <FaYoutube size={22} />, "YouTube Clips"],
+            ["https://t.me/+tkCnkzT96kxmMzQ1", <FaTelegramPlane size={22} />, "Telegram Free 🎁"],
+            ["https://t.me/+tkCnkzT96kxmMzQ1", <FaTelegramPlane size={22} />, "Telegram Paid 🔒"],
+          ].map(([href, icon, label]) => (
+            <a key={label} href={href} target="_blank" rel="noreferrer" className="group flex flex-col items-center">
+              <div className="premium-panel flex h-14 w-14 items-center justify-center rounded-full border-[#D4AF37]/70 text-white transition duration-300 group-hover:-translate-y-1 group-hover:bg-[#D4AF37] group-hover:text-[#2f1642]">
+                {icon}
+              </div>
+              <span className="mt-2 text-[0.65rem] uppercase tracking-[0.16em] text-white/75 transition group-hover:text-[#D4AF37]">
+                {label}
+              </span>
+            </a>
+          ))}
         </div>
 
-        {/* Copyright */}
-        <p className="text-xs text-white/60">
+        <p className="text-xs tracking-[0.07em] text-white/60">
           © 2026 S Healing Center Spiritual Awakening. All Rights Reserved.
         </p>
       </div>
