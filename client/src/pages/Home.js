@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="relative h-[110vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[105vh] flex items-center justify-center overflow-hidden">
         {/* Background Video */}
         <video
           autoPlay
@@ -22,23 +22,23 @@ const Home = () => {
 
 
         {/* Content */}
-        <div className="container mx-auto px-6 md:px-10 z-10 text-white">
+        <div className="container mx-auto px-6 md:px-10 z-10 text-white md:max-w-4xl md:mx-0 md:ml-10 lg:ml-16">
           <p className="text-[#D4AF37] tracking-[0.24em] mb-3 uppercase text-sm md:text-base">
             Ascend with Clarity
           </p>
-          <h1 className="text-5xl md:text-7xl font-light mb-5 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-light mb-5 leading-[1.12] drop-shadow-[0_8px_26px_rgba(15,5,30,0.7)]">
             Find Purpose, Peace,
             <br />
             and Personal Growth.
           </h1>
-          <p className="text-xl mb-8 max-w-lg italic leading-relaxed">
+          <p className="text-lg md:text-xl mb-8 max-w-md italic leading-relaxed text-white/90 drop-shadow-[0_4px_18px_rgba(15,5,30,0.6)]">
             Your Journey Starts Here.
           </p>
           <div className="flex space-x-4">
             {/* Tarot Modal Trigger */}
             <button
               onClick={() => setShowModal(true)}
-              className="bg-[#D4AF37] px-8 py-3 rounded-md font-bold hover:bg-[#B8860B] transition"
+              className="bg-[#D4AF37] px-8 py-3 rounded-md font-bold hover:bg-[#B8860B] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[0_12px_26px_rgba(212,175,55,0.35)]"
             >
               BEGIN YOUR READING
             </button>
@@ -46,7 +46,7 @@ const Home = () => {
             {/* Energy Healing Redirect */}
             <button
               onClick={() => (window.location.href = "/energyhealing")}
-              className="border border-white px-8 py-3 rounded-md font-bold hover:bg-white hover:text-black transition"
+              className="border border-white px-8 py-3 rounded-md font-bold hover:bg-white hover:text-black transition-all duration-300 ease-out hover:-translate-y-0.5"
             >
               EXPLORE HEALING
             </button>
