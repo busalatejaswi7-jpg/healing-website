@@ -30,13 +30,13 @@ const products = [
 const Estore = () => {
   return (
     <div>
-      <section className="bg-[#4A2C5D] py-14 md:py-16 text-white text-center">
-        <h2 className="text-4xl mb-10 md:mb-12 uppercase tracking-widest text-[#D4AF37]">
+      <section className="bg-[#4A2C5D] py-12 md:py-14 text-white text-center">
+        <h2 className="text-4xl mb-9 md:mb-10 uppercase tracking-widest text-[#D4AF37]">
           Our Spiritual E-Store
         </h2>
         <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl">
           {products.map((product) => (
-            <div key={product.name} className="bg-white/10 p-4 rounded-lg">
+            <div key={product.name} className="bg-white/10 p-4 rounded-lg transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(212,175,55,0.16)]">
               <div className="aspect-square bg-gray-300 rounded mb-4 overflow-hidden">
                 <img
                   src={product.image}
@@ -46,7 +46,7 @@ const Estore = () => {
               </div>
               <h4 className="text-lg">{product.name}</h4>
               <p className="text-[#D4AF37]">{product.price}</p>
-              <button className="mt-2 text-xs border border-[#D4AF37] px-4 py-1 hover:bg-[#D4AF37] transition uppercase">
+              <button className="mt-2 text-xs border border-[#D4AF37] px-4 py-1 hover:bg-[#D4AF37] transition-all duration-300 ease-out uppercase">
                 Add To Cart
               </button>
             </div>

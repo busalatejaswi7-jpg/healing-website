@@ -19,7 +19,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-white/20 bg-gradient-to-r from-purple-950/90 via-purple-900/90 to-purple-950/90 px-4 py-3 text-white shadow-[0_14px_45px_rgba(20,8,35,0.5)] backdrop-blur-xl md:px-8">
+    <nav className="sticky top-0 z-50 border-b border-white/20 bg-gradient-to-r from-purple-950/90 via-purple-900/90 to-purple-950/90 px-4 py-3 text-white shadow-[0_16px_45px_rgba(20,8,35,0.5)] backdrop-blur-2xl supports-[backdrop-filter]:bg-purple-950/80 md:px-8">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <div className="flex items-center gap-3">
           <img
@@ -66,7 +66,7 @@ const Navbar = () => {
 
           <Link
             to="/book"
-            className="hidden rounded-full border border-yellow-300/70 bg-gradient-to-br from-yellow-300 to-yellow-500 px-5 py-2 text-sm font-semibold tracking-[0.08em] text-purple-900 shadow-lg shadow-yellow-700/25 transition duration-300 hover:-translate-y-0.5 hover:from-yellow-200 hover:to-yellow-400 md:block"
+            className="hidden rounded-full border border-yellow-300/70 bg-gradient-to-br from-yellow-300 to-yellow-500 px-5 py-2 text-sm font-semibold tracking-[0.08em] text-purple-900 shadow-lg shadow-yellow-700/25 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:from-yellow-200 hover:to-yellow-400 md:block"
           >
             Book Now
           </Link>
