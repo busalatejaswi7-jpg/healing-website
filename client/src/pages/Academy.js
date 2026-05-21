@@ -1,20 +1,23 @@
 import React from "react";
 
+const courses = [
+  ["Reiki Healing + Teaching", "Master Energy Alignment"],
+  ["Numerology Course", "Decode Sacred Number Wisdom"],
+  ["Crystal Healing Course", "Channel Crystal Vibrations"],
+  ["Runes Course", "Learn Ancient Divination"],
+  ["Tarot for Beginners", "Unlock Your Intuition"],
+  ["Aura Cleansing Course", "Restore Spiritual Balance"],
+];
+
 const Academy = () => {
   return (
     <div>
-      <section className="py-16 md:py-20 container mx-auto px-6 text-center">
+      <section className="py-14 md:py-16 container mx-auto px-6 text-center">
         <h2 className="text-4xl mb-10 md:mb-12 uppercase tracking-widest">
           Transformational Courses
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 auto-rows-fr max-w-6xl mx-auto">
-          {[
-            ["Reiki Healing + Teaching", "Master Energy Alignment"],
-            ["Numerology Course", "Decode Sacred Number Wisdom"],
-            ["Crystal Healing Course", "Channel Crystal Vibrations"],
-            ["Runes Course", "Learn Ancient Divination"],
-            ["Tarot for Beginners", "Unlock Your Intuition"],
-          ].map(([title, subtitle]) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 auto-rows-fr max-w-6xl mx-auto">
+          {courses.map(([title, subtitle]) => (
             <div
               key={title}
               className="relative group overflow-hidden rounded-xl h-full min-h-64 bg-black"
