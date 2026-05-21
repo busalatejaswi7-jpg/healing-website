@@ -20,20 +20,18 @@ const Home = () => {
           Your browser does not support the video tag.
         </video>
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="container mx-auto px-10 z-10 text-white">
-          <p className="text-[#D4AF37] tracking-[0.3em] mb-2 uppercase">
+        <div className="container mx-auto px-6 md:px-10 z-10 text-white">
+          <p className="text-[#D4AF37] tracking-[0.24em] mb-3 uppercase text-sm md:text-base">
             Ascend with Clarity
           </p>
-          <h1 className="text-5xl md:text-7xl font-light mb-4 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-light mb-5 leading-tight">
             Find Purpose, Peace,
             <br />
             and Personal Growth.
           </h1>
-          <p className="text-xl mb-8 max-w-lg italic">
+          <p className="text-xl mb-8 max-w-lg italic leading-relaxed">
             Your Journey Starts Here.
           </p>
           <div className="flex space-x-4">
