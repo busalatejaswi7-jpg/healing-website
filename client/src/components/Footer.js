@@ -4,10 +4,10 @@ import { FaInstagram, FaYoutube, FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-[#D4AF37]/30 bg-gradient-to-b from-[#4A2C5D] to-[#2E173C] py-14 text-white">
+    <footer className="border-t border-[#D4AF37]/30 bg-gradient-to-b from-[#4A2C5D] to-[#2E173C] py-14 text-white md:py-16">
       <div className="container mx-auto px-6 text-center">
         <div className="mb-8">
-          <h2 className="mb-4 text-2xl font-semibold tracking-[0.05em] text-white md:text-3xl">
+          <h2 className="mb-4 text-2xl font-semibold tracking-[0.06em] text-white md:text-3xl">
             S Healing Center • Spiritual Awakening
           </h2>
           <p className="mx-auto max-w-lg text-sm italic leading-relaxed text-white/75 md:text-base">
@@ -25,7 +25,7 @@ const Footer = () => {
             ["https://t.me/+tkCnkzT96kxmMzQ1", <FaTelegramPlane size={22} />, "Telegram Paid 🔒"],
           ].map(([href, icon, label]) => (
             <a key={label} href={href} target="_blank" rel="noreferrer" className="group flex flex-col items-center">
-              <div className="premium-panel flex h-14 w-14 items-center justify-center rounded-full border-[#D4AF37]/70 text-white transition duration-300 group-hover:-translate-y-1 group-hover:bg-[#D4AF37] group-hover:text-[#2f1642]">
+              <div className="premium-panel flex h-14 w-14 items-center justify-center rounded-full border-[#D4AF37]/70 text-white transition duration-300 group-hover:-translate-y-1 group-hover:bg-[#D4AF37] group-hover:text-[#2f1642] group-hover:shadow-[0_12px_35px_rgba(212,175,55,0.45)]">
                 {icon}
               </div>
               <span className="mt-2 text-[0.65rem] uppercase tracking-[0.16em] text-white/75 transition group-hover:text-[#D4AF37]">

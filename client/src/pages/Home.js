@@ -19,14 +19,15 @@ const Home = () => {
           Your browser does not support the video tag.
         </video>
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/75" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(212,175,55,0.2),transparent_40%)]" />
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-20 text-white md:px-10">
-          <div className="max-w-3xl">
+          <div className="premium-panel reveal-on-load max-w-3xl rounded-3xl px-6 py-8 md:px-10 md:py-12">
             <p className="mb-3 text-xs uppercase tracking-[0.4em] text-[#D4AF37] md:text-sm">
               Ascend with Clarity
             </p>
-            <h1 className="mb-5 text-4xl font-medium leading-tight md:text-6xl lg:text-7xl">
+            <h1 className="mb-5 text-4xl font-semibold leading-[1.12] md:text-6xl lg:text-7xl">
               Find Purpose, Peace,
               <br />
               and Personal Growth.
@@ -44,7 +45,7 @@ const Home = () => {
 
               <button
                 onClick={() => (window.location.href = "/energyhealing")}
-                className="premium-button border border-white/70 bg-white/5 text-white hover:-translate-y-1 hover:bg-white hover:text-black"
+                className="premium-button border border-white/70 bg-white/10 text-white hover:-translate-y-1 hover:bg-white hover:text-black"
               >
                 Explore Healing
               </button>

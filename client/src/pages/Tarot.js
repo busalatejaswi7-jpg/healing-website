@@ -42,10 +42,10 @@ const Tarot = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="relative flex flex-col md:flex-row bg-gradient-to-r from-purple-50 to-white border border-[#B8860B] shadow-xl rounded-xl overflow-hidden hover:shadow-2xl transition"
+      className="relative mx-4 my-6 flex flex-col overflow-hidden rounded-2xl border border-[#B8860B]/60 bg-gradient-to-r from-purple-50 via-white to-purple-50 shadow-[0_20px_60px_rgba(80,26,108,0.22)] transition duration-500 hover:shadow-[0_26px_72px_rgba(80,26,108,0.3)] md:mx-8 md:my-10 md:flex-row"
     >
       {/* Animated Aura Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-200 via-transparent to-yellow-100 opacity-30 animate-pulse"></div>
+      <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-purple-200 via-transparent to-yellow-100 opacity-30"></div>
 
       {/* Left Side Image */}
       <motion.div variants={childVariants} className="md:w-1/2 relative z-10">
@@ -64,7 +64,7 @@ const Tarot = () => {
       {/* Right Side Content */}
       <motion.div
         variants={childVariants}
-        className="md:w-1/2 p-8 flex flex-col justify-center relative z-10"
+        className="relative z-10 flex flex-col justify-center p-8 md:w-1/2 md:p-10"
       >
         <h3 className="text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-[#B8860B] mb-2 tracking-wide">
           Tarot Reading
@@ -80,7 +80,7 @@ const Tarot = () => {
         <motion.div
           whileHover={{ rotateY: 180 }}
           transition={{ duration: 0.8 }}
-          className="w-32 h-48 bg-purple-100 border rounded-lg shadow-md flex items-center justify-center cursor-pointer mb-6"
+          className="mb-6 flex h-48 w-32 cursor-pointer items-center justify-center rounded-lg border border-purple-200 bg-purple-100 shadow-md"
         >
           <p className="text-purple-700 font-bold">✨ Reveal ✨</p>
         </motion.div>
@@ -89,7 +89,7 @@ const Tarot = () => {
         <motion.button
           whileHover={{ scale: 1.08, backgroundColor: "#7e22ce" }}
           whileTap={{ scale: 0.95 }}
-          className="w-full md:w-auto border px-6 py-2 font-bold rounded-lg bg-purple-600 text-white shadow-md transition mb-6"
+          className="mb-6 w-full rounded-full border bg-purple-600 px-6 py-2 font-bold text-white shadow-md transition md:w-auto"
           onClick={() => navigate("/book")}
         >
           BOOK APPOINTMENT
@@ -115,7 +115,7 @@ const Tarot = () => {
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="min-w-[250px] bg-white shadow-md rounded-lg p-4 border border-gray-200"
+                className="min-w-[250px] rounded-lg border border-gray-200 bg-white p-4 shadow-md"
               >
                 <p className="italic text-gray-600">"{t.text}"</p>
                 <p className="text-sm font-bold text-purple-700 mt-2">

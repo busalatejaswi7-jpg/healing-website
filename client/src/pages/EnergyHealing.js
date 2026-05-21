@@ -49,34 +49,34 @@ const EnergyHealingData = [
 const EnergyHealing = () => {
   const navigate = useNavigate();
   return (
-    <section className="py-12 bg-gray-50">
-      <h2 className="text-4xl mb-12 uppercase tracking-widest text-center text-purple-700 font-bold">
+    <section className="bg-gradient-to-b from-[#f7f3fa] via-white to-[#f8f5fb] py-14 md:py-16">
+      <h2 className="mb-12 text-center text-4xl font-bold uppercase tracking-[0.18em] text-purple-700">
         Book A Session
       </h2>
 
-      <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-7 px-6 md:grid-cols-2 md:px-10 lg:grid-cols-3 lg:px-14">
         {EnergyHealingData.map((s, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
-            className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition"
+            className="group overflow-hidden rounded-2xl border border-purple-100 bg-white/90 p-5 shadow-[0_16px_40px_rgba(60,16,88,0.12)] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(60,16,88,0.2)]"
           >
-            <div>
+            <div className="mb-4 overflow-hidden rounded-xl">
               <img
                 src={s.image}
                 alt={s.name}
-                className="w-full h-full object-cover"
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
             </div>
 
             <h2 className="text-xl font-bold text-purple-700">{s.name}</h2>
-            <p className="text-gray-600 mt-2">{s.desc}</p>
-            <p className="text-xl font-bold text-[#B8860B] mb-6">{s.price}</p>
+            <p className="mt-2 text-gray-600">{s.desc}</p>
+            <p className="mb-6 text-xl font-bold text-[#B8860B]">{s.price}</p>
             <button
               onClick={() => navigate("/book")}
-              className="mt-4 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-800"
+              className="mt-2 rounded-full bg-purple-600 px-5 py-2 text-sm font-semibold tracking-wide text-white transition duration-300 hover:bg-purple-800"
             >
               Book Now
             </button>
