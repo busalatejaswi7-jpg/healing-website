@@ -9,7 +9,10 @@ const Academy = () => {
         </h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
           {[
-            ["Runes Mastery Course", "Learn Ancient Divination"],
+            ["Reiki Healing + Teaching", "Master Energy Alignment"],
+            ["Numerology Course", "Decode Sacred Number Wisdom"],
+            ["Crystal Healing Course", "Channel Crystal Vibrations"],
+            ["Runes Course", "Learn Ancient Divination"],
             ["Tarot for Beginners", "Unlock Your Intuition"],
           ].map(([title, subtitle]) => (
             <div key={title} className="premium-card group reveal-on-load relative h-64 overflow-hidden bg-black">

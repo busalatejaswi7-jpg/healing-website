@@ -10,7 +10,6 @@ const Estore = () => {
         <div className="container mx-auto grid grid-cols-1 gap-6 px-6 sm:grid-cols-2 md:grid-cols-4 md:gap-7">
           {[
             ["/images/stones.webp", "Runes Stone set", "Runes Stone Set", "$45.00"],
-            ["/images/amethyst.webp", "Amethyst Geode", "Amethyst Geode", "$99.00"],
             ["/images/tarot2.webp", "Tarot Deck", "Celestial Tarot Deck", "$34.00"],
             ["/images/oils.webp", "Chakra Essential Oils", "Chakra Essential Oils", "$25.00"],
           ].map(([src, alt, name, price]) => (
