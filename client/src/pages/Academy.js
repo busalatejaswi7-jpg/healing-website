@@ -3,11 +3,11 @@ import React from "react";
 const Academy = () => {
   return (
     <div>
-      <section className="container mx-auto px-6 py-20 text-center md:py-24">
-        <h2 className="section-heading text-white">
+      <section className="py-20 container mx-auto px-6 text-center">
+        <h2 className="text-4xl mb-12 uppercase tracking-widest">
           Transformational Courses
         </h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             ["Reiki Healing + Teaching", "Master Energy Alignment"],
             ["Numerology Course", "Decode Sacred Number Wisdom"],
@@ -15,13 +15,12 @@ const Academy = () => {
             ["Runes Course", "Learn Ancient Divination"],
             ["Tarot for Beginners", "Unlock Your Intuition"],
           ].map(([title, subtitle]) => (
-            <div key={title} className="premium-card group reveal-on-load relative h-64 overflow-hidden bg-black">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.18),transparent_62%)]" />
-              <div className="absolute inset-0 bg-black/45 transition duration-500 group-hover:bg-black/35" />
-              <div className="relative z-10 flex h-full flex-col items-center justify-center px-5 text-white">
-                <h3 className="text-2xl font-semibold md:text-3xl">{title}</h3>
-                <p className="mb-5 mt-2 tracking-[0.16em] text-[#D4AF37]">{subtitle}</p>
-                <button className="premium-button bg-[#D4AF37] py-2 text-xs text-[#2f1642] hover:-translate-y-1 hover:bg-[#c79f23]">
+            <div key={title} className="relative group overflow-hidden rounded-xl h-64 bg-black">
+              <div className="absolute inset-0 bg-gray-800 opacity-60 group-hover:scale-110 transition duration-500"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+                <h3 className="text-3xl font-light">{title}</h3>
+                <p className="mb-4 tracking-widest text-[#D4AF37]">{subtitle}</p>
+                <button className="bg-[#D4AF37] px-6 py-2 rounded font-bold uppercase text-sm">
                   Enroll Now
                 </button>
               </div>
