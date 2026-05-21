@@ -7,74 +7,70 @@ const Home = () => {
 
   return (
     <>
-      <section className="relative h-[110vh] flex items-center justify-center overflow-hidden">
-        {/* Background Video */}
+      <section className="relative flex min-h-[96vh] items-center justify-center overflow-hidden">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover object-bottom"
+          className="absolute inset-0 h-full w-full object-cover object-center md:object-[center_65%]"
         >
           <source src="/video/home.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/60" />
 
-        {/* Content */}
-        <div className="container mx-auto px-10 z-10 text-white">
-          <p className="text-[#D4AF37] tracking-[0.3em] mb-2 uppercase">
-            Ascend with Clarity
-          </p>
-          <h1 className="text-5xl md:text-7xl font-light mb-4 leading-tight">
-            Find Purpose, Peace,
-            <br />
-            and Personal Growth.
-          </h1>
-          <p className="text-xl mb-8 max-w-lg italic">
-            Your Journey Starts Here.
-          </p>
-          <div className="flex space-x-4">
-            {/* Tarot Modal Trigger */}
-            <button
-              onClick={() => setShowModal(true)}
-              className="bg-[#D4AF37] px-8 py-3 rounded-md font-bold hover:bg-[#B8860B] transition"
-            >
-              BEGIN YOUR READING
-            </button>
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-20 text-white md:px-10">
+          <div className="max-w-3xl">
+            <p className="mb-3 text-xs uppercase tracking-[0.4em] text-[#D4AF37] md:text-sm">
+              Ascend with Clarity
+            </p>
+            <h1 className="mb-5 text-4xl font-medium leading-tight md:text-6xl lg:text-7xl">
+              Find Purpose, Peace,
+              <br />
+              and Personal Growth.
+            </h1>
+            <p className="mb-9 max-w-xl text-base italic text-white/90 md:text-xl">
+              Your Journey Starts Here.
+            </p>
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <button
+                onClick={() => setShowModal(true)}
+                className="premium-button bg-[#D4AF37] text-[#2f1642] shadow-xl shadow-yellow-900/30 hover:-translate-y-1 hover:bg-[#c79f23]"
+              >
+                Begin Your Reading
+              </button>
 
-            {/* Energy Healing Redirect */}
-            <button
-              onClick={() => window.location.href = "/energyhealing"}
-              className="border border-white px-8 py-3 rounded-md font-bold hover:bg-white hover:text-black transition"
-            >
-              EXPLORE HEALING
-            </button>
+              <button
+                onClick={() => (window.location.href = "/energyhealing")}
+                className="premium-button border border-white/70 bg-white/5 text-white hover:-translate-y-1 hover:bg-white hover:text-black"
+              >
+                Explore Healing
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Tarot Modal */}
       {showModal && (
-        <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-96 relative">
-            <h2 className="text-2xl font-bold text-purple-700 mb-4 text-center">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4">
+          <div className="w-full max-w-sm rounded-2xl border border-purple-200/40 bg-white p-6 shadow-[0_20px_50px_rgba(0,0,0,0.35)] md:p-7">
+            <h2 className="mb-3 text-center text-2xl font-semibold text-purple-800">
               Tarot Reading
             </h2>
-            <p className="text-gray-600 mb-4 italic text-center">
+            <p className="mb-5 text-center italic text-gray-600">
               Choose your session length
             </p>
-            <button className="w-full bg-purple-600 text-white py-2 rounded mb-2 hover:bg-purple-800">
+            <button className="mb-2 w-full rounded-md bg-purple-600 py-2.5 text-white transition hover:bg-purple-800">
               20 Min – ₹499
             </button>
-            <button className="w-full bg-purple-600 text-white py-2 rounded hover:bg-purple-800">
+            <button className="w-full rounded-md bg-purple-600 py-2.5 text-white transition hover:bg-purple-800">
               45 Min – ₹1499
             </button>
             <button
               onClick={() => setShowModal(false)}
-              className="mt-4 w-full border border-purple-600 text-purple-600 py-2 rounded hover:bg-purple-600 hover:text-white"
+              className="mt-4 w-full rounded-md border border-purple-600 py-2.5 text-purple-700 transition hover:bg-purple-600 hover:text-white"
             >
               Close
             </button>
