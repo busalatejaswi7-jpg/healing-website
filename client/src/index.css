@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -18,7 +18,11 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   color: #fff;
-  background: var(--deep-plum);
+  background:
+    radial-gradient(circle at 10% 15%, rgba(212, 175, 55, 0.1), transparent 30%),
+    radial-gradient(circle at 85% 85%, rgba(255, 255, 255, 0.08), transparent 35%),
+    var(--deep-plum);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -38,13 +42,40 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
+p {
+  color: var(--text-soft);
+}
+
 @layer components {
   .premium-panel {
-    @apply border border-white/20 bg-white/10 backdrop-blur-md shadow-[0_18px_45px_rgba(0,0,0,0.25)];
+    @apply border border-white/20 bg-gradient-to-b from-white/20 to-white/5 backdrop-blur-xl shadow-[0_20px_55px_rgba(0,0,0,0.28)];
   }
 
   .premium-button {
-    @apply rounded-md px-6 py-3 font-semibold tracking-[0.09em] uppercase transition-all duration-300 ease-out;
+    @apply rounded-full px-6 py-3 font-semibold tracking-[0.09em] uppercase transition-all duration-300 ease-out;
+  }
+
+  .section-heading {
+    @apply mb-12 text-3xl uppercase tracking-[0.2em] md:text-4xl;
+  }
+
+  .premium-card {
+    @apply premium-panel rounded-2xl border border-white/20 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)];
+  }
+
+  .reveal-on-load {
+    animation: reveal 0.8s ease both;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
