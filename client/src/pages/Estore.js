@@ -8,12 +8,6 @@ const products = [
     alt: "Runes Stone set",
   },
   {
-    name: "Celestial Tarot Deck",
-    price: "$34.00",
-    image: "/images/tarot2.webp",
-    alt: "Tarot Deck",
-  },
-  {
     name: "Chakra Essential Oils",
     price: "$25.00",
     image: "/images/oils.webp",
@@ -21,9 +15,27 @@ const products = [
   },
   {
     name: "Healing Crystal Kit",
-    price: "$39.00",
+    price: "$50 USD",
     image: "/images/crystal.webp",
     alt: "Healing Crystal Kit",
+  },
+  {
+    name: "Healing Grid",
+    price: "$58 USD",
+    image: "/images/chakra.webp",
+    alt: "Healing Grid",
+  },
+  {
+    name: "Rudraksha",
+    price: "$42 USD",
+    image: "/images/amethyst.webp",
+    alt: "Rudraksha",
+  },
+  {
+    name: "Crystal Bracelet",
+    price: "$36 USD",
+    image: "/images/angel.webp",
+    alt: "Crystal Bracelet",
   },
 ];
 
