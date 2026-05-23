@@ -22,17 +22,17 @@ const Home = () => {
 
 
         {/* Content */}
-        <div className="container mx-auto px-6 md:px-10 z-10 text-left md:max-w-4xl md:mx-0 md:ml-10 lg:ml-16">
+        <div className="container mx-auto px-6 md:px-10 z-10 text-left md:max-w-4xl md:mx-0 md:ml-14 lg:ml-24 xl:ml-28">
           <div className="inline-block bg-gradient-to-r from-[#1F142A]/26 via-[#1F142A]/10 to-transparent px-3 py-4 md:px-4 md:py-5 rounded-lg">
             <p className="text-[#D4AF37] tracking-[0.24em] mb-3 uppercase text-sm md:text-base">
             Ascend with Clarity
           </p>
-            <h1 className="text-5xl md:text-6xl font-light mb-5 leading-[1.12] text-[#FFF8EE] opacity-100 [text-shadow:0_1px_4px_rgba(18,9,30,0.28)]">
+            <h1 className="text-5xl md:text-6xl font-light mb-5 leading-[1.12] text-[#FFF8EE] opacity-100 [text-shadow:0_2px_10px_rgba(20,10,34,0.34)]">
             Find Purpose, Peace,
             <br />
             and Personal Growth.
           </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-md italic leading-relaxed text-[#EEE4D2] drop-shadow-[0_4px_16px_rgba(18,8,32,0.35)]">
+            <p className="text-lg md:text-xl mb-8 max-w-md italic leading-relaxed text-[#EEE4D2] drop-shadow-[0_5px_14px_rgba(18,8,32,0.3)]">
             Your Journey Starts Here.
           </p>
             <div className="flex space-x-4">

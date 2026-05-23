@@ -56,17 +56,17 @@ const Academy = () => {
           {courses.map((course) => (
             <div
               key={course.title}
-              className="relative group overflow-hidden rounded-xl h-full min-h-64 bg-black transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(212,175,55,0.18)]"
+              className="relative group overflow-hidden rounded-xl h-full min-h-64 bg-black border border-white/10 shadow-[0_10px_24px_rgba(15,8,24,0.2)] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(212,175,55,0.18)]"
             >
               <div className="absolute inset-0 bg-gray-800 opacity-60 group-hover:scale-105 transition-transform duration-500"></div>
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
-                <h3 className="text-3xl font-light">{course.title}</h3>
-                <div className="mb-4 tracking-widest text-[#D4AF37]">
+              <div className="absolute inset-0 flex flex-col items-center justify-between text-white px-5 py-7 text-center">
+                <h3 className="text-2xl md:text-3xl font-light leading-snug mb-4">{course.title}</h3>
+                <div className="mb-6 space-y-1 tracking-[0.16em] text-[#D4AF37] text-sm md:text-base">
                   {course.details.map((detail) => (
                     <p key={detail}>{detail}</p>
                   ))}
                 </div>
-                <button className="bg-[#D4AF37] px-6 py-2 rounded font-bold uppercase text-sm transition-all duration-300 ease-out hover:bg-[#c39e28] hover:-translate-y-0.5">
+                <button className="mt-auto bg-[#D4AF37] px-6 py-2 rounded font-bold uppercase text-sm transition-all duration-300 ease-out hover:bg-[#c39e28] hover:-translate-y-0.5">
                   Enroll Now
                 </button>
               </div>
