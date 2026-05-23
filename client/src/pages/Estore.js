@@ -44,16 +44,16 @@ const products = [
     alt: "Raw Rose Quartz Crystals",
   },
   {
-    name: "Raw Clear Quartz Crystals Tumble",
+    name: "Raw Clear Quartz Crystals",
     price: "$30 USD",
     image: "/images/stones.webp",
-    alt: "Raw Clear Quartz Crystals Tumble",
+    alt: "Raw Clear Quartz Crystals",
   },
   {
-    name: "Raw Amethyst Crystals Tumble",
+    name: "Raw Amethyst Crystals",
     price: "$34 USD",
     image: "/images/amethyst.webp",
-    alt: "Raw Amethyst Crystals Tumble",
+    alt: "Raw Amethyst Crystals",
   },
   {
     name: "1 Mukhi Rudraaksh",
@@ -80,16 +80,16 @@ const products = [
     alt: "5 Mukhi Rudraaksh",
   },
   {
-    name: "6 Ek Mukhi Rudraaksh",
+    name: "6 Mukhi Rudraaksh",
     price: "$60 USD",
     image: "/images/amethyst.webp",
-    alt: "6 Ek Mukhi Rudraaksh",
+    alt: "6 Mukhi Rudraaksh",
   },
   {
-    name: "7 Ek Mukhi Rudraaksh",
+    name: "7 Mukhi Rudraaksh",
     price: "$62 USD",
     image: "/images/amethyst.webp",
-    alt: "7 Ek Mukhi Rudraaksh",
+    alt: "7 Mukhi Rudraaksh",
   },
   {
     name: "Rudraaksh + Crystal Bracelet",
