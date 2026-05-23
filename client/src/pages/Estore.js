@@ -154,19 +154,19 @@ const Estore = () => {
         <h2 className="text-4xl mb-9 md:mb-10 uppercase tracking-widest text-[#D4AF37]">
           Our Spiritual E-Store
         </h2>
-        <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl">
+        <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-7 max-w-6xl">
           {products.map((product) => (
-            <div key={product.name} className="bg-white/10 p-4 rounded-lg transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(212,175,55,0.16)]">
-              <div className="aspect-square bg-gray-300 rounded mb-4 overflow-hidden">
+            <div key={product.name} className="bg-white/10 p-4 rounded-lg h-full flex flex-col border border-white/10 shadow-[0_10px_24px_rgba(15,8,24,0.16)] transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(212,175,55,0.16)]">
+              <div className="aspect-[4/3] bg-gray-300 rounded mb-4 overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.alt}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-center"
                 />
               </div>
-              <h4 className="text-lg">{product.name}</h4>
-              <p className="text-[#D4AF37]">{product.price}</p>
-              <button className="mt-2 text-xs border border-[#D4AF37] px-4 py-1 hover:bg-[#D4AF37] transition-all duration-300 ease-out uppercase">
+              <h4 className="text-lg leading-snug min-h-[3.25rem]">{product.name}</h4>
+              <p className="text-[#D4AF37] mt-1">{product.price}</p>
+              <button className="mt-auto pt-3 text-xs border border-[#D4AF37] px-4 py-1 hover:bg-[#D4AF37] transition-all duration-300 ease-out uppercase">
                 Add To Cart
               </button>
             </div>
