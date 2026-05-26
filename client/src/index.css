@@ -21,8 +21,8 @@ body {
   background:
     radial-gradient(circle at 10% 15%, rgba(212, 175, 55, 0.1), transparent 30%),
     radial-gradient(circle at 85% 85%, rgba(255, 255, 255, 0.08), transparent 35%),
-    var(--deep-plum);
-  line-height: 1.6;
+    linear-gradient(180deg, #4a2c5d 0%, #341d45 48%, #2a1638 100%);
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,7 +34,7 @@ h4,
 h5,
 h6 {
   font-family: "Cinzel", serif;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.015em;
 }
 
 button,
@@ -51,20 +51,24 @@ p {
     @apply border border-white/20 bg-gradient-to-b from-white/20 to-white/5 backdrop-blur-xl shadow-[0_20px_55px_rgba(0,0,0,0.28)];
   }
 
-  .premium-button {
-    @apply rounded-full px-6 py-3 font-semibold tracking-[0.09em] uppercase transition-all duration-300 ease-out;
+  .premium-card {
+    @apply border border-white/20 bg-gradient-to-b from-white/15 to-white/5 backdrop-blur-lg shadow-[0_14px_40px_rgba(16,7,29,0.35)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(212,175,55,0.2)];
+  }
+
+  .section-shell {
+    @apply py-14 md:py-16;
   }
 
   .section-heading {
-    @apply mb-12 text-3xl uppercase tracking-[0.2em] md:text-4xl;
+    @apply mb-10 text-3xl uppercase tracking-[0.14em] md:mb-12 md:text-4xl;
   }
 
-  .premium-card {
-    @apply premium-panel rounded-2xl border border-white/20 transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)];
+  .image-frame {
+    @apply bg-black/15;
   }
 
   .reveal-on-load {
-    animation: reveal 0.8s ease both;
+    animation: reveal 0.85s ease both;
   }
 }
 
