@@ -1,44 +1,42 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaInstagram, FaYoutube, FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-[#D4AF37]/30 bg-gradient-to-b from-[#4A2C5D] to-[#2E173C] py-12 text-white md:py-14">
-      <div className="container mx-auto px-6 text-center">
-        <div className="mb-7">
-          <h2 className="mb-4 text-2xl font-semibold tracking-[0.06em] text-white md:text-3xl">
-            S Healing Center • Spiritual Awakening
-          </h2>
-          <p className="mx-auto max-w-lg text-sm italic leading-relaxed text-white/75 md:text-base">
-            Guiding you through the stars and ancient symbols to find your true
-            purpose.
+    <footer className="border-t border-[#D4AF37]/30 bg-gradient-to-b from-[#3F2450] to-[#21102c] py-14 text-white">
+      <div className="container mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-4">
+        <div className="md:col-span-2">
+          <h3 className="mb-3 text-2xl text-[#D4AF37]">S Healing Center</h3>
+          <p className="max-w-md text-sm leading-relaxed text-white/75">
+            A premium spiritual wellness sanctuary guiding your inner evolution through tarot, energy healing, and mindful mystical practices.
           </p>
         </div>
 
-        <div className="mb-8 flex flex-wrap items-start justify-center gap-x-7 gap-y-6 md:gap-x-10 md:gap-y-7">
-          {[
-            ["https://www.instagram.com", <FaInstagram size={22} />, "Instagram"],
-            ["https://youtu.be/jHUOzixQ8Wg", <FaYoutube size={22} />, "YouTube Main"],
-            ["https://youtu.be/YOUR_SECOND_CHANNEL_LINK", <FaYoutube size={22} />, "YouTube Clips"],
-            ["https://t.me/+tkCnkzT96kxmMzQ1", <FaTelegramPlane size={22} />, "Telegram Free 🎁"],
-            ["https://t.me/+tkCnkzT96kxmMzQ1", <FaTelegramPlane size={22} />, "Telegram Paid 🔒"],
-          ].map(([href, icon, label]) => (
-            <a key={label} href={href} target="_blank" rel="noreferrer" className="group flex w-24 flex-col items-center">
-              <div className="premium-panel flex h-14 w-14 items-center justify-center rounded-full border-[#D4AF37]/70 text-white transition duration-300 group-hover:-translate-y-1 group-hover:bg-[#D4AF37] group-hover:text-[#2f1642] group-hover:shadow-[0_12px_35px_rgba(212,175,55,0.45)]">
-                {icon}
-              </div>
-              <span className="mt-2 text-center text-[0.65rem] uppercase leading-relaxed tracking-[0.14em] text-white/75 transition group-hover:text-[#D4AF37]">
-                {label}
-              </span>
-            </a>
-          ))}
+        <div>
+          <h4 className="mb-3 text-sm uppercase tracking-[0.1em] text-[#D4AF37]">Quick Links</h4>
+          <div className="flex flex-col gap-2 text-sm text-white/85">
+            <Link to="/">Home</Link>
+            <Link to="/energyhealing">Energy Healing</Link>
+            <Link to="/estore">E-Store</Link>
+            <Link to="/academy">Academy</Link>
+          </div>
         </div>
 
-        <p className="text-xs tracking-[0.07em] text-white/60">
-          © 2026 S Healing Center Spiritual Awakening. All Rights Reserved.
-        </p>
+        <div>
+          <h4 className="mb-3 text-sm uppercase tracking-[0.1em] text-[#D4AF37]">Contact</h4>
+          <p className="text-sm text-white/75">support@shealingcenter.com</p>
+          <p className="text-sm text-white/75">+1 (555) 012-8899</p>
+          <div className="mt-4 flex items-center gap-3">
+            {[ ["https://www.instagram.com", <FaInstagram />, "Instagram"], ["https://youtu.be/jHUOzixQ8Wg", <FaYoutube />, "YouTube"], ["https://t.me/+tkCnkzT96kxmMzQ1", <FaTelegramPlane />, "Telegram"] ].map(([href, icon, label]) => (
+              <a key={label} href={href} target="_blank" rel="noreferrer" className="premium-panel flex h-10 w-10 items-center justify-center rounded-full text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#D4AF37] hover:text-[#2f1642]">
+                {icon}
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
+      <p className="mt-10 text-center text-xs tracking-[0.06em] text-white/60">© 2026 S Healing Center Spiritual Awakening. All Rights Reserved.</p>
     </footer>
   );
 };
