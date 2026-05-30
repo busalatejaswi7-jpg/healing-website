@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#21162f"/><stop offset="100%" stop-color="#4a2c5d"/></linearGradient></defs>
-<rect width="1200" height="900" fill="url(#bg)"/>
-<ellipse cx="600" cy="760" rx="320" ry="70" fill="#00000033"/>
-<circle cx="300" cy="470" r="28" fill="#8f5f3f"/><circle cx="360" cy="470" r="28" fill="#8f5f3f"/><circle cx="420" cy="470" r="28" fill="#8f5f3f"/><circle cx="480" cy="470" r="28" fill="#8f5f3f"/><circle cx="540" cy="470" r="28" fill="#8f5f3f"/><circle cx="600" cy="470" r="28" fill="#8f5f3f"/><circle cx="660" cy="470" r="28" fill="#8f5f3f"/><circle cx="720" cy="470" r="28" fill="#8f5f3f"/><circle cx="780" cy="470" r="28" fill="#8f5f3f"/><circle cx="840" cy="470" r="28" fill="#8f5f3f"/><circle cx="900" cy="470" r="28" fill="#8f5f3f"/><rect x="480" y="310" width="240" height="70" rx="20" fill="#c9a5ec"/>
-<text x="600" y="820" font-size="44" text-anchor="middle" fill="#f7ecd0" font-family="Georgia, serif">Rudraaksh + Crystal Mala</text>
-</svg>

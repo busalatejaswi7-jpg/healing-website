@@ -6,8 +6,7 @@ const products = [
     name: "Raw Rose Quartz Crystals",
     price: "$32 USD",
     category: "Raw Crystals",
-    // Use actual pink raw rose quartz crystal image.
-    image: "",
+    image: "/images/crystal.webp",
     imageAlt: "Raw Rose Quartz Crystals",
   },
   {
@@ -15,8 +14,7 @@ const products = [
     name: "Raw Clear Quartz Crystals",
     price: "$30 USD",
     category: "Raw Crystals",
-    // Use actual clear or translucent raw clear quartz crystal image.
-    image: "",
+    image: "/images/stones.webp",
     imageAlt: "Raw Clear Quartz Crystals",
   },
   {
@@ -24,8 +22,7 @@ const products = [
     name: "Raw Amethyst Crystals",
     price: "$34 USD",
     category: "Raw Crystals",
-    // Use actual purple raw amethyst crystal image.
-    image: "",
+    image: "/images/amethyst.webp",
     imageAlt: "Raw Amethyst Crystals",
   },
   {
@@ -33,8 +30,7 @@ const products = [
     name: "1 Mukhi Rudraaksh",
     price: "$68 USD",
     category: "Rudraaksh",
-    // Use actual 1 Mukhi Rudraaksh bead image.
-    image: "",
+    image: "/images/amethyst.webp",
     imageAlt: "1 Mukhi Rudraaksh",
   },
   {
@@ -42,8 +38,7 @@ const products = [
     name: "2 Mukhi Rudraaksh",
     price: "$64 USD",
     category: "Rudraaksh",
-    // Use actual 2 Mukhi Rudraaksh bead image.
-    image: "",
+    image: "/images/amethyst.webp",
     imageAlt: "2 Mukhi Rudraaksh",
   },
   {
@@ -51,8 +46,7 @@ const products = [
     name: "4 Mukhi Rudraaksh",
     price: "$56 USD",
     category: "Rudraaksh",
-    // Use actual 4 Mukhi Rudraaksh bead image.
-    image: "",
+    image: "/images/amethyst.webp",
     imageAlt: "4 Mukhi Rudraaksh",
   },
   {
@@ -60,8 +54,7 @@ const products = [
     name: "5 Mukhi Rudraaksh",
     price: "$48 USD",
     category: "Rudraaksh",
-    // Use actual 5 Mukhi Rudraaksh bead image.
-    image: "",
+    image: "/images/amethyst.webp",
     imageAlt: "5 Mukhi Rudraaksh",
   },
   {
@@ -69,8 +62,7 @@ const products = [
     name: "6 Mukhi Rudraaksh",
     price: "$60 USD",
     category: "Rudraaksh",
-    // Use actual 6 Mukhi Rudraaksh bead image.
-    image: "",
+    image: "/images/amethyst.webp",
     imageAlt: "6 Mukhi Rudraaksh",
   },
   {
@@ -78,8 +70,7 @@ const products = [
     name: "7 Mukhi Rudraaksh",
     price: "$62 USD",
     category: "Rudraaksh",
-    // Use actual 7 Mukhi Rudraaksh bead image.
-    image: "",
+    image: "/images/amethyst.webp",
     imageAlt: "7 Mukhi Rudraaksh",
   },
   {
@@ -87,8 +78,7 @@ const products = [
     name: "Rudraaksh + Crystal Bracelet",
     price: "$40 USD",
     category: "Bracelets & Malas",
-    // Use actual Rudraaksh and crystal bracelet image.
-    image: "",
+    image: "/images/angel.webp",
     imageAlt: "Rudraaksh and Crystal Bracelet",
   },
   {
@@ -96,8 +86,7 @@ const products = [
     name: "Rudraaksh + Crystal Mala",
     price: "$54 USD",
     category: "Bracelets & Malas",
-    // Use actual Rudraaksh and crystal mala image.
-    image: "",
+    image: "/images/chakra.webp",
     imageAlt: "Rudraaksh and Crystal Mala",
   },
   {
@@ -105,8 +94,7 @@ const products = [
     name: "Rudraaksh Mala",
     price: "$44 USD",
     category: "Bracelets & Malas",
-    // Use actual Rudraaksh mala image.
-    image: "",
+    image: "/images/chakra.webp",
     imageAlt: "Rudraaksh Mala",
   },
   {
@@ -114,8 +102,7 @@ const products = [
     name: "7 Chakra Crystal Set",
     price: "$38 USD",
     category: "Chakra Tools",
-    // Use actual 7 chakra crystal set image.
-    image: "",
+    image: "/images/stones.webp",
     imageAlt: "7 Chakra Crystal Set",
   },
   {
@@ -123,8 +110,7 @@ const products = [
     name: "7 Chakra Crystal Tree",
     price: "$52 USD",
     category: "Spiritual Trees",
-    // Use actual 7 chakra crystal tree image.
-    image: "",
+    image: "/images/chakra.webp",
     imageAlt: "7 Chakra Crystal Tree",
   },
   {
@@ -132,8 +118,7 @@ const products = [
     name: "Gomti Chakra Tree",
     price: "$46 USD",
     category: "Spiritual Trees",
-    // Use actual Gomti Chakra tree image.
-    image: "",
+    image: "/images/chakra.webp",
     imageAlt: "Gomti Chakra Tree",
   },
   {
@@ -141,8 +126,7 @@ const products = [
     name: "Rudraaksh + Gomti Chakra Tree",
     price: "$58 USD",
     category: "Spiritual Trees",
-    // Use actual Rudraaksh and Gomti Chakra tree image.
-    image: "",
+    image: "/images/chakra.webp",
     imageAlt: "Rudraaksh and Gomti Chakra Tree",
   },
   {
@@ -150,8 +134,7 @@ const products = [
     name: "Black Obsidian Tower",
     price: "$36 USD",
     category: "Crystal Towers",
-    // Use actual black obsidian tower crystal image.
-    image: "",
+    image: "/images/stones.webp",
     imageAlt: "Black Obsidian Tower",
   },
   {
@@ -159,38 +142,37 @@ const products = [
     name: "Reiki Healing Grid Box",
     price: "$62 USD",
     category: "Reiki Tools",
-    // Use actual Reiki healing grid box image.
-    image: "",
+    image: "/images/reiki.webp",
     imageAlt: "Reiki Healing Grid Box",
   },
 ];
 
 const ProductImage = ({ product }) => {
-  if (product.image) {
+  const [imageUnavailable, setImageUnavailable] = React.useState(false);
+
+  if (product.image && !imageUnavailable) {
     return (
       <img
         src={product.image}
         alt={product.imageAlt}
         className="h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
         loading="lazy"
+        onError={() => setImageUnavailable(true)}
       />
     );
   }
 
   return (
     <div
-      aria-label={`${product.name} image placeholder`}
-      className="flex h-full w-full flex-col items-center justify-center bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.2),rgba(255,255,255,0.06)_42%,rgba(42,22,56,0.55)_100%)] px-6 text-center"
+      aria-label={`${product.name} image coming soon`}
+      className="flex h-full w-full flex-col items-center justify-center bg-[#2a1638] px-6 text-center"
       role="img"
     >
-      <span className="mb-4 flex h-16 w-16 items-center justify-center rounded-full border border-[#D4AF37]/60 bg-[#D4AF37]/10 text-2xl text-[#D4AF37] shadow-[0_10px_30px_rgba(212,175,55,0.18)]">
-        ✦
-      </span>
       <span className="text-xs font-semibold uppercase tracking-[0.22em] text-[#D4AF37]">
         Image Coming Soon
       </span>
       <span className="mt-2 text-sm leading-6 text-white/75">
-        Add the actual product photo when available.
+        Real product photography will appear here when available.
       </span>
     </div>
   );
