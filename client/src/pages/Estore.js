@@ -7,7 +7,7 @@ const products = [
     price: "$32 USD",
     category: "Raw Crystals",
     imageDescription: "pink raw rose quartz crystal",
-    image: null,
+    image: "/images/crystal.webp",
   },
   {
     id: "raw-clear-quartz-crystals",
@@ -15,7 +15,7 @@ const products = [
     price: "$30 USD",
     category: "Raw Crystals",
     imageDescription: "transparent clear quartz crystal",
-    image: null,
+    image: "/images/crystal.webp",
   },
   {
     id: "raw-amethyst-crystals",
@@ -23,7 +23,7 @@ const products = [
     price: "$34 USD",
     category: "Raw Crystals",
     imageDescription: "purple amethyst crystal cluster",
-    image: null,
+    image: "/images/amethyst.webp",
   },
   {
     id: "1-mukhi-rudraaksh",
@@ -31,7 +31,7 @@ const products = [
     price: "$68 USD",
     category: "Rudraaksh",
     imageDescription: "1 mukhi rudraksha bead",
-    image: null,
+    image: "/images/stones.webp",
   },
   {
     id: "2-mukhi-rudraaksh",
@@ -39,7 +39,7 @@ const products = [
     price: "$64 USD",
     category: "Rudraaksh",
     imageDescription: "2 mukhi rudraksha bead",
-    image: null,
+    image: "/images/stones.webp",
   },
   {
     id: "4-mukhi-rudraaksh",
@@ -47,7 +47,7 @@ const products = [
     price: "$56 USD",
     category: "Rudraaksh",
     imageDescription: "4 mukhi rudraksha bead",
-    image: null,
+    image: "/images/stones.webp",
   },
   {
     id: "5-mukhi-rudraaksh",
@@ -55,7 +55,7 @@ const products = [
     price: "$48 USD",
     category: "Rudraaksh",
     imageDescription: "5 mukhi rudraksha bead",
-    image: null,
+    image: "/images/stones.webp",
   },
   {
     id: "6-mukhi-rudraaksh",
@@ -63,7 +63,7 @@ const products = [
     price: "$60 USD",
     category: "Rudraaksh",
     imageDescription: "6 mukhi rudraksha bead",
-    image: null,
+    image: "/images/stones.webp",
   },
   {
     id: "7-mukhi-rudraaksh",
@@ -71,7 +71,7 @@ const products = [
     price: "$62 USD",
     category: "Rudraaksh",
     imageDescription: "7 mukhi rudraksha bead",
-    image: null,
+    image: "/images/stones.webp",
   },
   {
     id: "rudraaksh-crystal-bracelet",
@@ -79,7 +79,7 @@ const products = [
     price: "$40 USD",
     category: "Bracelets & Malas",
     imageDescription: "bracelet product image",
-    image: null,
+    image: "/images/crystal.webp",
   },
   {
     id: "rudraaksh-crystal-mala",
@@ -87,7 +87,7 @@ const products = [
     price: "$54 USD",
     category: "Bracelets & Malas",
     imageDescription: "crystal mala image",
-    image: null,
+    image: "/images/crystal.webp",
   },
   {
     id: "rudraaksh-mala",
@@ -95,7 +95,7 @@ const products = [
     price: "$44 USD",
     category: "Bracelets & Malas",
     imageDescription: "rudraksha mala image",
-    image: null,
+    image: "/images/stones.webp",
   },
   {
     id: "7-chakra-crystal-set",
@@ -103,7 +103,7 @@ const products = [
     price: "$38 USD",
     category: "Chakra Tools",
     imageDescription: "seven chakra crystal set",
-    image: null,
+    image: "/images/chakra.webp",
   },
   {
     id: "7-chakra-crystal-tree",
@@ -111,7 +111,7 @@ const products = [
     price: "$52 USD",
     category: "Spiritual Trees",
     imageDescription: "gemstone chakra tree",
-    image: null,
+    image: "/images/chakra.webp",
   },
   {
     id: "gomti-chakra-tree",
@@ -119,7 +119,7 @@ const products = [
     price: "$46 USD",
     category: "Spiritual Trees",
     imageDescription: "gomti chakra tree",
-    image: null,
+    image: "/images/chakra.webp",
   },
   {
     id: "rudraaksh-gomti-chakra-tree",
@@ -127,7 +127,7 @@ const products = [
     price: "$58 USD",
     category: "Spiritual Trees",
     imageDescription: "rudraksha gomti tree",
-    image: null,
+    image: "/images/chakra.webp",
   },
   {
     id: "black-obsidian-tower",
@@ -135,7 +135,7 @@ const products = [
     price: "$36 USD",
     category: "Crystal Towers",
     imageDescription: "black obsidian tower crystal",
-    image: null,
+    image: "/images/stones.webp",
   },
   {
     id: "reiki-healing-grid-box",
@@ -143,43 +143,18 @@ const products = [
     price: "$62 USD",
     category: "Reiki Tools",
     imageDescription: "reiki crystal grid set",
-    image: null,
+    image: "/images/reiki.webp",
   },
 ];
 
-const ProductImage = ({ product }) => {
-  if (!product.image) {
-    return (
-      <div
-        className="absolute inset-0 z-[1] flex flex-col items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.24),rgba(74,44,93,0.72)_42%,rgba(18,8,27,0.96)_100%)] px-6 text-center"
-        aria-label={`${product.name} image pending`}
-      >
-        <div className="absolute -left-16 top-10 h-44 w-44 rounded-full bg-[#D4AF37]/12 blur-3xl" />
-        <div className="absolute -right-20 bottom-12 h-56 w-56 rounded-full bg-[#8d5aa6]/24 blur-3xl" />
-        <div className="relative rounded-[1.5rem] border border-[#D4AF37]/35 bg-white/[0.06] px-6 py-7 shadow-[0_18px_60px_rgba(0,0,0,0.28)] backdrop-blur-md">
-          <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-black/20 text-3xl text-[#F1D36B] shadow-[0_0_32px_rgba(212,175,55,0.18)]">
-            ✦
-          </div>
-          <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#F1D36B]">
-            Product Image Pending
-          </p>
-          <p className="mt-3 text-sm leading-6 text-white/72">
-            Exact asset needed: {product.imageDescription}
-          </p>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <img
-      src={product.image}
-      alt={product.imageDescription}
-      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
-      loading="lazy"
-    />
-  );
-};
+const ProductImage = ({ product }) => (
+  <img
+    src={product.image}
+    alt={product.imageDescription}
+    className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
+    loading="lazy"
+  />
+);
 
 const ProductCard = ({ product }) => (
   <article className="premium-card group relative flex h-full min-h-[29rem] overflow-hidden rounded-[2rem] border border-white/15 bg-[#1e1029] text-left shadow-[0_24px_70px_rgba(12,5,22,0.42)] transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#D4AF37]/70 hover:shadow-[0_28px_80px_rgba(212,175,55,0.24)] focus-within:border-[#D4AF37]/80 sm:min-h-[31rem]">
