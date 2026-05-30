@@ -1,14 +1,11 @@
 import React from "react";
 
 const products = [
-  // Product images must be exact, unique visual matches for the caption.
-  // Leave image as null unless a repository asset has been visually verified.
   {
     id: "raw-rose-quartz-crystals",
     name: "Raw Rose Quartz Crystals",
     price: "$32 USD",
     category: "Raw Crystals",
-    imageDescription: "actual raw pink rose quartz crystal photo",
     image: null,
   },
   {
@@ -16,7 +13,6 @@ const products = [
     name: "Raw Clear Quartz Crystals",
     price: "$30 USD",
     category: "Raw Crystals",
-    imageDescription: "actual transparent clear quartz crystal photo",
     image: null,
   },
   {
@@ -24,7 +20,6 @@ const products = [
     name: "Raw Amethyst Crystals",
     price: "$34 USD",
     category: "Raw Crystals",
-    imageDescription: "actual purple amethyst crystal cluster photo",
     image: "/images/amethyst.webp",
   },
   {
@@ -32,7 +27,6 @@ const products = [
     name: "1 Mukhi Rudraaksh",
     price: "$68 USD",
     category: "Rudraaksh",
-    imageDescription: "actual 1 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -40,7 +34,6 @@ const products = [
     name: "2 Mukhi Rudraaksh",
     price: "$64 USD",
     category: "Rudraaksh",
-    imageDescription: "actual 2 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -48,7 +41,6 @@ const products = [
     name: "4 Mukhi Rudraaksh",
     price: "$56 USD",
     category: "Rudraaksh",
-    imageDescription: "actual 4 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -56,7 +48,6 @@ const products = [
     name: "5 Mukhi Rudraaksh",
     price: "$48 USD",
     category: "Rudraaksh",
-    imageDescription: "actual 5 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -64,7 +55,6 @@ const products = [
     name: "6 Mukhi Rudraaksh",
     price: "$60 USD",
     category: "Rudraaksh",
-    imageDescription: "actual 6 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -72,7 +62,6 @@ const products = [
     name: "7 Mukhi Rudraaksh",
     price: "$62 USD",
     category: "Rudraaksh",
-    imageDescription: "actual 7 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -80,7 +69,6 @@ const products = [
     name: "Rudraaksh + Crystal Bracelet",
     price: "$40 USD",
     category: "Bracelets & Malas",
-    imageDescription: "actual Rudraaksh and crystal bracelet photo",
     image: null,
   },
   {
@@ -88,7 +76,6 @@ const products = [
     name: "Rudraaksh + Crystal Mala",
     price: "$54 USD",
     category: "Bracelets & Malas",
-    imageDescription: "actual Rudraaksh and crystal mala photo",
     image: null,
   },
   {
@@ -96,7 +83,6 @@ const products = [
     name: "Rudraaksh Mala",
     price: "$44 USD",
     category: "Bracelets & Malas",
-    imageDescription: "actual Rudraaksh mala photo",
     image: null,
   },
   {
@@ -104,7 +90,6 @@ const products = [
     name: "7 Chakra Crystal Set",
     price: "$38 USD",
     category: "Chakra Tools",
-    imageDescription: "actual 7 chakra crystal set photo",
     image: null,
   },
   {
@@ -112,7 +97,6 @@ const products = [
     name: "7 Chakra Crystal Tree",
     price: "$52 USD",
     category: "Spiritual Trees",
-    imageDescription: "actual 7 chakra crystal tree photo",
     image: null,
   },
   {
@@ -120,7 +104,6 @@ const products = [
     name: "Gomti Chakra Tree",
     price: "$46 USD",
     category: "Spiritual Trees",
-    imageDescription: "actual Gomti Chakra Tree photo",
     image: null,
   },
   {
@@ -128,7 +111,6 @@ const products = [
     name: "Rudraaksh + Gomti Chakra Tree",
     price: "$58 USD",
     category: "Spiritual Trees",
-    imageDescription: "actual Rudraaksh and Gomti Chakra Tree photo",
     image: null,
   },
   {
@@ -136,7 +118,6 @@ const products = [
     name: "Black Obsidian Tower",
     price: "$36 USD",
     category: "Crystal Towers",
-    imageDescription: "actual black obsidian tower crystal photo",
     image: null,
   },
   {
@@ -144,7 +125,6 @@ const products = [
     name: "Reiki Healing Grid Box",
     price: "$62 USD",
     category: "Reiki Tools",
-    imageDescription: "actual Reiki healing grid box photo",
     image: null,
   },
 ];
@@ -153,22 +133,14 @@ const ProductImage = ({ product }) => {
   if (!product.image) {
     return (
       <div
-        className="absolute inset-0 z-[1] flex flex-col items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.24),rgba(74,44,93,0.72)_42%,rgba(18,8,27,0.96)_100%)] px-6 text-center"
-        aria-label={`${product.name} image pending`}
+        className="absolute inset-0 z-[1] overflow-hidden bg-[radial-gradient(circle_at_30%_20%,rgba(241,211,107,0.24),transparent_30%),radial-gradient(circle_at_70%_72%,rgba(141,90,166,0.32),transparent_34%),linear-gradient(135deg,rgba(74,44,93,0.96),rgba(18,8,27,0.98))]"
+        aria-hidden="true"
       >
-        <div className="absolute -left-16 top-10 h-44 w-44 rounded-full bg-[#D4AF37]/12 blur-3xl" />
-        <div className="absolute -right-20 bottom-12 h-56 w-56 rounded-full bg-[#8d5aa6]/24 blur-3xl" />
-        <div className="relative rounded-[1.5rem] border border-[#D4AF37]/35 bg-white/[0.06] px-6 py-7 shadow-[0_18px_60px_rgba(0,0,0,0.28)] backdrop-blur-md">
-          <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-black/20 text-3xl text-[#F1D36B] shadow-[0_0_32px_rgba(212,175,55,0.18)]">
-            ✦
-          </div>
-          <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#F1D36B]">
-            Product Image Pending
-          </p>
-          <p className="mt-3 text-sm leading-6 text-white/72">
-            Exact asset needed: {product.imageDescription}
-          </p>
-        </div>
+        <div className="absolute inset-5 rounded-[1.5rem] border border-[#D4AF37]/25 bg-white/[0.035] shadow-[inset_0_0_60px_rgba(212,175,55,0.08)]" />
+        <div className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#D4AF37]/30 bg-[#D4AF37]/10 shadow-[0_0_50px_rgba(212,175,55,0.18)]" />
+        <div className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-2xl border border-white/15 bg-white/[0.04]" />
+        <div className="absolute inset-x-10 top-10 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent" />
+        <div className="absolute inset-x-10 bottom-10 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/35 to-transparent" />
       </div>
     );
   }
@@ -176,7 +148,7 @@ const ProductImage = ({ product }) => {
   return (
     <img
       src={product.image}
-      alt={product.imageDescription}
+      alt={product.name}
       className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
       loading="lazy"
     />
