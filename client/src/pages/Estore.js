@@ -6,155 +6,184 @@ const products = [
     name: "Raw Rose Quartz Crystals",
     price: "$32 USD",
     category: "Raw Crystals",
-    image: "https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&w=900&q=85",
-    imageAlt: "Pink raw rose quartz crystal photography",
+    imageDescription: "pink raw rose quartz crystal",
+    image: null,
   },
   {
     id: "raw-clear-quartz-crystals",
     name: "Raw Clear Quartz Crystals",
     price: "$30 USD",
     category: "Raw Crystals",
-    image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85",
-    imageAlt: "Clear quartz crystal photography",
+    imageDescription: "transparent clear quartz crystal",
+    image: null,
   },
   {
     id: "raw-amethyst-crystals",
     name: "Raw Amethyst Crystals",
     price: "$34 USD",
     category: "Raw Crystals",
-    image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=900&q=85",
-    imageAlt: "Purple amethyst cluster photography",
+    imageDescription: "purple amethyst crystal cluster",
+    image: null,
   },
   {
     id: "1-mukhi-rudraaksh",
     name: "1 Mukhi Rudraaksh",
     price: "$68 USD",
     category: "Rudraaksh",
-    image: "https://images.pexels.com/photos/2297252/pexels-photo-2297252.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Close-up rudraaksh bead photography",
+    imageDescription: "1 mukhi rudraksha bead",
+    image: null,
   },
   {
     id: "2-mukhi-rudraaksh",
     name: "2 Mukhi Rudraaksh",
     price: "$64 USD",
     category: "Rudraaksh",
-    image: "https://images.pexels.com/photos/18723427/pexels-photo-18723427.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Authentic rudraaksh bead image",
+    imageDescription: "2 mukhi rudraksha bead",
+    image: null,
   },
   {
     id: "4-mukhi-rudraaksh",
     name: "4 Mukhi Rudraaksh",
     price: "$56 USD",
     category: "Rudraaksh",
-    image: "https://images.pexels.com/photos/18723428/pexels-photo-18723428.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Authentic rudraaksh bead product image",
+    imageDescription: "4 mukhi rudraksha bead",
+    image: null,
   },
   {
     id: "5-mukhi-rudraaksh",
     name: "5 Mukhi Rudraaksh",
     price: "$48 USD",
     category: "Rudraaksh",
-    image: "https://images.pexels.com/photos/15923899/pexels-photo-15923899.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Rudraaksh mala photography",
+    imageDescription: "5 mukhi rudraksha bead",
+    image: null,
   },
   {
     id: "6-mukhi-rudraaksh",
     name: "6 Mukhi Rudraaksh",
     price: "$60 USD",
     category: "Rudraaksh",
-    image: "https://images.pexels.com/photos/34719277/pexels-photo-34719277.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Rudraaksh spiritual product image",
+    imageDescription: "6 mukhi rudraksha bead",
+    image: null,
   },
   {
     id: "7-mukhi-rudraaksh",
     name: "7 Mukhi Rudraaksh",
     price: "$62 USD",
     category: "Rudraaksh",
-    image: "https://images.pexels.com/photos/1441357/pexels-photo-1441357.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Rudraaksh bead photography",
+    imageDescription: "7 mukhi rudraksha bead",
+    image: null,
   },
   {
     id: "rudraaksh-crystal-bracelet",
     name: "Rudraaksh + Crystal Bracelet",
     price: "$40 USD",
     category: "Bracelets & Malas",
-    image: "https://images.pexels.com/photos/1302307/pexels-photo-1302307.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Rudraaksh and crystal bracelet product photography",
+    imageDescription: "bracelet product image",
+    image: null,
   },
   {
     id: "rudraaksh-crystal-mala",
     name: "Rudraaksh + Crystal Mala",
     price: "$54 USD",
     category: "Bracelets & Malas",
-    image: "https://images.pexels.com/photos/6787257/pexels-photo-6787257.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Rudraaksh and crystal mala necklace photography",
+    imageDescription: "crystal mala image",
+    image: null,
   },
   {
     id: "rudraaksh-mala",
     name: "Rudraaksh Mala",
     price: "$44 USD",
     category: "Bracelets & Malas",
-    image: "https://images.pexels.com/photos/6050166/pexels-photo-6050166.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Premium rudraaksh mala image",
+    imageDescription: "rudraksha mala image",
+    image: null,
   },
   {
     id: "7-chakra-crystal-set",
     name: "7 Chakra Crystal Set",
     price: "$38 USD",
     category: "Chakra Tools",
-    image: "https://images.unsplash.com/photo-1600431521340-491eca880813?auto=format&fit=crop&w=900&q=85",
-    imageAlt: "Colorful seven chakra crystal arrangement",
+    imageDescription: "seven chakra crystal set",
+    image: null,
   },
   {
     id: "7-chakra-crystal-tree",
     name: "7 Chakra Crystal Tree",
     price: "$52 USD",
     category: "Spiritual Trees",
-    image: "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Chakra gemstone tree product photography",
+    imageDescription: "gemstone chakra tree",
+    image: null,
   },
   {
     id: "gomti-chakra-tree",
     name: "Gomti Chakra Tree",
     price: "$46 USD",
     category: "Spiritual Trees",
-    image: "https://images.pexels.com/photos/4207791/pexels-photo-4207791.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Gomti chakra spiritual gemstone tree",
+    imageDescription: "gomti chakra tree",
+    image: null,
   },
   {
     id: "rudraaksh-gomti-chakra-tree",
     name: "Rudraaksh + Gomti Chakra Tree",
     price: "$58 USD",
     category: "Spiritual Trees",
-    image: "https://images.pexels.com/photos/6694198/pexels-photo-6694198.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop",
-    imageAlt: "Rudraaksh and Gomti Chakra spiritual decorative tree",
+    imageDescription: "rudraksha gomti tree",
+    image: null,
   },
   {
     id: "black-obsidian-tower",
     name: "Black Obsidian Tower",
     price: "$36 USD",
     category: "Crystal Towers",
-    image: "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=900&q=85",
-    imageAlt: "Black obsidian crystal tower photography",
+    imageDescription: "black obsidian tower crystal",
+    image: null,
   },
   {
     id: "reiki-healing-grid-box",
     name: "Reiki Healing Grid Box",
     price: "$62 USD",
     category: "Reiki Tools",
-    image: "https://images.unsplash.com/photo-1600428877878-1a0fd85beda5?auto=format&fit=crop&w=900&q=85",
-    imageAlt: "Reiki healing crystal grid setup",
+    imageDescription: "reiki crystal grid set",
+    image: null,
   },
 ];
 
-const ProductCard = ({ product }) => (
-  <article className="premium-card group relative flex h-full min-h-[29rem] overflow-hidden rounded-[2rem] border border-white/15 bg-[#1e1029] text-left shadow-[0_24px_70px_rgba(12,5,22,0.42)] transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#D4AF37]/70 hover:shadow-[0_28px_80px_rgba(212,175,55,0.24)] focus-within:border-[#D4AF37]/80 sm:min-h-[31rem]">
+const ProductImage = ({ product }) => {
+  if (!product.image) {
+    return (
+      <div
+        className="absolute inset-0 z-[1] flex flex-col items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.24),rgba(74,44,93,0.72)_42%,rgba(18,8,27,0.96)_100%)] px-6 text-center"
+        aria-label={`${product.name} image pending`}
+      >
+        <div className="absolute -left-16 top-10 h-44 w-44 rounded-full bg-[#D4AF37]/12 blur-3xl" />
+        <div className="absolute -right-20 bottom-12 h-56 w-56 rounded-full bg-[#8d5aa6]/24 blur-3xl" />
+        <div className="relative rounded-[1.5rem] border border-[#D4AF37]/35 bg-white/[0.06] px-6 py-7 shadow-[0_18px_60px_rgba(0,0,0,0.28)] backdrop-blur-md">
+          <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border border-[#D4AF37]/50 bg-black/20 text-3xl text-[#F1D36B] shadow-[0_0_32px_rgba(212,175,55,0.18)]">
+            ✦
+          </div>
+          <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#F1D36B]">
+            Product Image Pending
+          </p>
+          <p className="mt-3 text-sm leading-6 text-white/72">
+            Exact asset needed: {product.imageDescription}
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
     <img
       src={product.image}
-      alt={product.imageAlt}
+      alt={product.imageDescription}
       className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
       loading="lazy"
     />
+  );
+};
+
+const ProductCard = ({ product }) => (
+  <article className="premium-card group relative flex h-full min-h-[29rem] overflow-hidden rounded-[2rem] border border-white/15 bg-[#1e1029] text-left shadow-[0_24px_70px_rgba(12,5,22,0.42)] transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#D4AF37]/70 hover:shadow-[0_28px_80px_rgba(212,175,55,0.24)] focus-within:border-[#D4AF37]/80 sm:min-h-[31rem]">
+    <ProductImage product={product} />
     <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-[#241131]/62 to-black/92 transition-opacity duration-500 group-hover:opacity-95" />
     <div className="absolute inset-0 rounded-[2rem] ring-1 ring-inset ring-white/10 transition-all duration-500 group-hover:ring-[#D4AF37]/55" />
     <div className="absolute inset-x-6 top-6 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/70 to-transparent opacity-60" />
@@ -186,7 +215,7 @@ const Estore = () => {
           </span>
           <h2 className="section-heading mb-4 text-[#D4AF37]">Our Spiritual E-Store</h2>
           <p className="mx-auto max-w-2xl text-base leading-8 text-white/78 md:text-lg">
-            Curated crystals, Rudraaksh, chakra tools, and Reiki essentials presented with immersive product photography.
+            Curated crystals, Rudraaksh, chakra tools, and Reiki essentials shown only with verified matching product images.
           </p>
         </div>
 
