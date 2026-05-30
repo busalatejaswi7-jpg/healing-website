@@ -1,12 +1,14 @@
 import React from "react";
 
 const products = [
+  // Product images must be exact, unique visual matches for the caption.
+  // Leave image as null unless a repository asset has been visually verified.
   {
     id: "raw-rose-quartz-crystals",
     name: "Raw Rose Quartz Crystals",
     price: "$32 USD",
     category: "Raw Crystals",
-    imageDescription: "pink raw rose quartz crystal",
+    imageDescription: "actual raw pink rose quartz crystal photo",
     image: null,
   },
   {
@@ -14,7 +16,7 @@ const products = [
     name: "Raw Clear Quartz Crystals",
     price: "$30 USD",
     category: "Raw Crystals",
-    imageDescription: "transparent clear quartz crystal",
+    imageDescription: "actual transparent clear quartz crystal photo",
     image: null,
   },
   {
@@ -22,15 +24,15 @@ const products = [
     name: "Raw Amethyst Crystals",
     price: "$34 USD",
     category: "Raw Crystals",
-    imageDescription: "purple amethyst crystal cluster",
-    image: null,
+    imageDescription: "actual purple amethyst crystal cluster photo",
+    image: "/images/amethyst.webp",
   },
   {
     id: "1-mukhi-rudraaksh",
     name: "1 Mukhi Rudraaksh",
     price: "$68 USD",
     category: "Rudraaksh",
-    imageDescription: "1 mukhi rudraksha bead",
+    imageDescription: "actual 1 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -38,7 +40,7 @@ const products = [
     name: "2 Mukhi Rudraaksh",
     price: "$64 USD",
     category: "Rudraaksh",
-    imageDescription: "2 mukhi rudraksha bead",
+    imageDescription: "actual 2 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -46,7 +48,7 @@ const products = [
     name: "4 Mukhi Rudraaksh",
     price: "$56 USD",
     category: "Rudraaksh",
-    imageDescription: "4 mukhi rudraksha bead",
+    imageDescription: "actual 4 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -54,7 +56,7 @@ const products = [
     name: "5 Mukhi Rudraaksh",
     price: "$48 USD",
     category: "Rudraaksh",
-    imageDescription: "5 mukhi rudraksha bead",
+    imageDescription: "actual 5 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -62,7 +64,7 @@ const products = [
     name: "6 Mukhi Rudraaksh",
     price: "$60 USD",
     category: "Rudraaksh",
-    imageDescription: "6 mukhi rudraksha bead",
+    imageDescription: "actual 6 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -70,7 +72,7 @@ const products = [
     name: "7 Mukhi Rudraaksh",
     price: "$62 USD",
     category: "Rudraaksh",
-    imageDescription: "7 mukhi rudraksha bead",
+    imageDescription: "actual 7 Mukhi Rudraaksh photo",
     image: null,
   },
   {
@@ -78,7 +80,7 @@ const products = [
     name: "Rudraaksh + Crystal Bracelet",
     price: "$40 USD",
     category: "Bracelets & Malas",
-    imageDescription: "bracelet product image",
+    imageDescription: "actual Rudraaksh and crystal bracelet photo",
     image: null,
   },
   {
@@ -86,7 +88,7 @@ const products = [
     name: "Rudraaksh + Crystal Mala",
     price: "$54 USD",
     category: "Bracelets & Malas",
-    imageDescription: "crystal mala image",
+    imageDescription: "actual Rudraaksh and crystal mala photo",
     image: null,
   },
   {
@@ -94,7 +96,7 @@ const products = [
     name: "Rudraaksh Mala",
     price: "$44 USD",
     category: "Bracelets & Malas",
-    imageDescription: "rudraksha mala image",
+    imageDescription: "actual Rudraaksh mala photo",
     image: null,
   },
   {
@@ -102,7 +104,7 @@ const products = [
     name: "7 Chakra Crystal Set",
     price: "$38 USD",
     category: "Chakra Tools",
-    imageDescription: "seven chakra crystal set",
+    imageDescription: "actual 7 chakra crystal set photo",
     image: null,
   },
   {
@@ -110,7 +112,7 @@ const products = [
     name: "7 Chakra Crystal Tree",
     price: "$52 USD",
     category: "Spiritual Trees",
-    imageDescription: "gemstone chakra tree",
+    imageDescription: "actual 7 chakra crystal tree photo",
     image: null,
   },
   {
@@ -118,7 +120,7 @@ const products = [
     name: "Gomti Chakra Tree",
     price: "$46 USD",
     category: "Spiritual Trees",
-    imageDescription: "gomti chakra tree",
+    imageDescription: "actual Gomti Chakra Tree photo",
     image: null,
   },
   {
@@ -126,7 +128,7 @@ const products = [
     name: "Rudraaksh + Gomti Chakra Tree",
     price: "$58 USD",
     category: "Spiritual Trees",
-    imageDescription: "rudraksha gomti tree",
+    imageDescription: "actual Rudraaksh and Gomti Chakra Tree photo",
     image: null,
   },
   {
@@ -134,7 +136,7 @@ const products = [
     name: "Black Obsidian Tower",
     price: "$36 USD",
     category: "Crystal Towers",
-    imageDescription: "black obsidian tower crystal",
+    imageDescription: "actual black obsidian tower crystal photo",
     image: null,
   },
   {
@@ -142,7 +144,7 @@ const products = [
     name: "Reiki Healing Grid Box",
     price: "$62 USD",
     category: "Reiki Tools",
-    imageDescription: "reiki crystal grid set",
+    imageDescription: "actual Reiki healing grid box photo",
     image: null,
   },
 ];
